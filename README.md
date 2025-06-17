@@ -39,17 +39,4 @@ A web-based Assignment Management System for schools, colleges, and educational 
 
 ---
 
-## 📁 Repository Structure
 
-assignment-management-system/
-├── client/ # Frontend (HTML/CSS/JS)
-│ ├── index.html
-│ ├── student-dashboard.html
-│ ├── teacher-dashboard.html
-│ ├── css/
-│ ├── js/
-│ └── assets/
-├── server/ # 🚧 Backend (coming soon)
-│ └── (APIs, auth, DB models)
-├── README.md # Project Overview
-└── LICENSE # Optional license file
