@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome, Teacher!</h1>
+
+    <section>
+      <h3>📝 Post New Assignment</h3>
+      <form id="postForm">
+        <label for="assignmentType">Assignment Type:</label>
+        <select id="assignmentType" required>
+          <option value="">-- Choose --</option>
+          <option value="assignment1">Assignment 1</option>
+          <option value="assignment2">Assignment 2</option>
+        </select>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title" required />
+
+        <label for="description">Description:</label>
+        <textarea id="description" rows="3" required></textarea>
+
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" required />
+
+        <button type="submit">Post Assignment</button>
+      </form>
+    </section>
+
+    <section style="margin-top: 30px;">
+      <h3>📚 Posted Assignments</h3>
+      <ul id="assignmentList">
+        <!-- Posted assignments will appear here -->
+      </ul>
+    </section>
+
+    <section style="margin-top: 30px;">
+      <h3>🔐 Submission Portal Control</h3>
+      <p id="portalStatus">Current Status: <strong style="color: green;">OPEN ✅</strong></p>
+      <button id="togglePortalBtn">Close Portal</button>
+    </section>
+
+
+    <section style="margin-top: 30px;">
+      <h3>📨 Teacher Notifications</h3>
+      <ul id="teacherNotifications">
+       <!-- Messages to teacher -->
+      </ul>
+    </section>
+
+
+  </div>
+  <p><a href="index.html">Logout</a></p>
+
+
+  <script src="js/teacher-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px;">
+    <h2>Welcome, Student 👨‍🎓</h2>
+    <button onclick="logout()">Logout</button>
+
+  </div>
+
+  <!-- rest of your dashboard content below -->
+
+  
+  <div class="container">
+    <h1>Welcome, Student!</h1>
+
+    <section>
+      <h3>📤 Upload Assignment</h3>
+      <form id="uploadForm">
+        <label for="assignmentType">Select Assignment:</label>
+        <select id="assignmentType" required>
+          <option value="">-- Choose --</option>
+          <option value="assignment1">Assignment 1</option>
+          <option value="assignment2">Assignment 2</option>
+        </select>
+
+        <label for="assignmentFile">Upload File:</label>
+        <input type="file" id="assignmentFile" required />
+
+        <button type="submit">Submit Assignment</button>
+      </form>
+    </section>
+
+    <section id="statusSection" style="margin-top:30px;">
+      
+      <h3>📊 Submitted Status</h3>
+      <ul id="statusList">
+        <!-- Sample status items will appear here -->
+      </ul>
+    </section>
+    <section style="margin-top: 30px;">
+      <h3>🔔 Notifications</h3>
+      <ul id="studentNotifications" class="notifications-list">
+        <!-- Notifications will appear here -->
+      </ul>
+</section>
+
+</section>
+
+  </div>
+
+  <script src="js/student-dashboard.js"></script>
+</body>
+</html>
