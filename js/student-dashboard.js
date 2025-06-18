@@ -66,3 +66,8 @@ notifications.forEach(note => {
 function logout() {
   window.location.href = "index.html";
 }
+
+const toggle = document.getElementById("darkModeToggle");
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
